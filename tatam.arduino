@@ -1,0 +1,28 @@
+int a2 = 0;
+int lastTrigger = 0;
+
+void setup(){
+  
+  Serial.begin(57600);
+
+}
+
+void loop(){
+  
+  a2 = analogRead(A2);
+  
+  if(millis() - lastTrigger < 1000){
+    digitalWrite(12, HIGH);
+  } else{
+    digitalWrite(12, LOW);
+  }
+ 
+  if(a2 > 0){
+    
+    lastTrigger = millis();
+    
+    Serial.println(a2);
+
+  }
+  
+}

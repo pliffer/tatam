@@ -1,0 +1,13 @@
+{
+  "name": "tatame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "setup.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.88.2",
+    "serialport": "^9.0.1"
+  }
+}
